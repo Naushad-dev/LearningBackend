@@ -12,5 +12,7 @@ app.use(express.static('public'))
 app.use(express.json())
 
 app.get("/",(req,res)=>res.send("Wroking my friend"))
+
+
 export {app}
 
