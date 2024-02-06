@@ -13,6 +13,13 @@ app.use(express.json())
 
 app.get("/",(req,res)=>res.send("Wroking my friend"))
 
+//importing routes
+
+import router from './routes/v1/user.routes.js';
+
+//using routes with middleware
+
+app.use("/api/v1/users", router)
 
 export {app}
 
